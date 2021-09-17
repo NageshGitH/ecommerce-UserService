@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: USER-REGISTRATION
+    
+feign:
+  client:
+    config:
+      default:
+        errorDecoder: com.userregistration.application.util.FeignClientErrorDecoder
+        loggerLevel: BASIC    
+    
+    
